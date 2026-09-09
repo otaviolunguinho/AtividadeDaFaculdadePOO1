@@ -1,19 +1,12 @@
 package Lista2.Questao3Lista2;
 
 public class Funcionario {
+
     private String nome;
     private String cpf;
     private double salarioBase;
     private double aliquotaBonus;
     private double totaldeVendas;
-
-
-    public double calcularSalario() {
-        double salario = salarioBase + (totaldeVendas * aliquotaBonus);
-        return salario;
-    }
-
-
 
     public Funcionario(){
 
@@ -68,10 +61,16 @@ public class Funcionario {
         this.totaldeVendas = totaldeVendas;
     }
 
+
+    public double calcularSalario() {
+        double salario = salarioBase + (totaldeVendas * aliquotaBonus);
+        return salario;
+    }
+
     @Override
     public String toString() {
         return "--------Funcionario--------" +
-               '\n' + "Nome: " + nome +
+                '\n' + "Nome: " + nome +
                 '\n' + "Cpf: " + cpf +
                 '\n' + "Salario Base: " + salarioBase +
                 '\n' + "A liquota Bonus: " + aliquotaBonus +
