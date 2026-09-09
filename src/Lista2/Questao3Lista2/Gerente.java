@@ -8,10 +8,8 @@ public class Gerente extends Funcionario{
         this.totaldeVendasLoja = totaldeVendasLoja;
     }
 
-    public Gerente(String nome, String cpf, double salarioBase, double aliquotaBonus, double totaldeVendasLoja) {
-
-        super(nome, cpf, salarioBase, aliquotaBonus, totaldeVendasLoja);
-
+    public Gerente(String nome, String cpf, double salarioBase, double aliquotaBonus, double totaldeVendas, double totaldeVendasLoja) {
+        super(nome, cpf, salarioBase, aliquotaBonus, totaldeVendas);
         this.totaldeVendasLoja = totaldeVendasLoja;
     }
 
