@@ -1,80 +1,67 @@
 package Lista2.Questao3Lista2;
 
-public class Funcionario {
+import org.w3c.dom.ls.LSOutput;
 
+public class Funcionario {
     private String nome;
     private String cpf;
     private double salarioBase;
     private double aliquotaBonus;
-    private double totaldeVendas;
+    private double totalDeVendas;
 
-    public Funcionario(){
-
-    }
-
-
-    public Funcionario(String nome, String cpf, double salarioBase, double aliquotaBonus, double totaldeVendas) {
+    public Funcionario(String nome, String cpf, double salarioBase, double aliquotaBonus, double totalDeVendas){
         this.nome = nome;
         this.cpf = cpf;
         this.salarioBase = salarioBase;
         this.aliquotaBonus = aliquotaBonus;
-        this.totaldeVendas = totaldeVendas;
+        this.totalDeVendas = totalDeVendas;
     }
 
-    public String getNome() {
+    public String getNome(){
         return nome;
     }
-
-    public void setNome(String nome) {
+    public void setNome(String nome){
         this.nome = nome;
     }
-
-    public String getCpf() {
+    public String getCpf(){
         return cpf;
     }
-
-    public void setCpf(String cpf) {
+    public void setCpf(String cpf){
         this.cpf = cpf;
     }
-
-    public double getSalarioBase() {
+    public double getSalarioBase(){
         return salarioBase;
     }
-
-    public void setSalarioBase(double salarioBase) {
+    public void setSalarioBase(double salarioBase){
         this.salarioBase = salarioBase;
     }
-
-    public double getAliquotaBonus() {
+    public double getAliquotaBonus(){
         return aliquotaBonus;
     }
-
-    public void setAliquotaBonus(double aliquotaBonus) {
+    public void setAliquotaBonus(double aliquotaBonus){
         this.aliquotaBonus = aliquotaBonus;
     }
-
-    public double getTotaldeVendas() {
-        return totaldeVendas;
+    public double getTotalDeVendas(){
+        return totalDeVendas;
     }
 
-    public void setTotaldeVendas(double totaldeVendas) {
-        this.totaldeVendas = totaldeVendas;
+    public void setTotalDeVendas(double totalDeVendas) {
+        this.totalDeVendas = totalDeVendas;
     }
 
-
-    public double calcularSalario() {
-        double salario = salarioBase + (totaldeVendas * aliquotaBonus);
-        return salario;
-    }
 
     @Override
-    public String toString() {
-        return "--------Funcionario--------" +
+    public String toString(){
+        return "-------Funcionário-------" +
                 '\n' + "Nome: " + nome +
                 '\n' + "Cpf: " + cpf +
                 '\n' + "Salario Base: " + salarioBase +
-                '\n' + "A liquota Bonus: " + aliquotaBonus +
-                '\n' + "Total de Vendas: " + totaldeVendas +
-                '\n' + "------------------";
+                '\n' + "Aliquota Bonus: " + aliquotaBonus +
+                '\n' + "Total de Vendas: " + totalDeVendas;
+    }
+
+    public double calcularSalario(){
+        double salarioTotal = (aliquotaBonus * totalDeVendas) + salarioBase;
+        return salarioTotal;
     }
 }
