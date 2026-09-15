@@ -9,6 +9,7 @@ public class Funcionario {
     private double aliquotaBonus;
     private double totalDeVendas;
 
+
     public Funcionario(String nome, String cpf, double salarioBase, double aliquotaBonus, double totalDeVendas){
         this.nome = nome;
         this.cpf = cpf;

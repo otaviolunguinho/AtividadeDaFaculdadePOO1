@@ -5,6 +5,7 @@ public class Gerente extends Funcionario {
         super(nome, cpf, salarioBase, aliquotaBonus, totalDeVendas);
     }
 
+
     @Override
     public double calcularSalario() {
         return super.calcularSalario();

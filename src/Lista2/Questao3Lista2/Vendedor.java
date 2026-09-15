@@ -10,6 +10,7 @@ public class Vendedor extends Funcionario {
         return super.calcularSalario();
     }
 
+
     @Override
     public String toString(){
         return super.toString() +
