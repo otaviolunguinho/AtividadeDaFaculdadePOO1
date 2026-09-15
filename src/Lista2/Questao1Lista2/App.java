@@ -1,7 +1,7 @@
 package Lista2.Questao1Lista2;
 
 public class App {
-    static void main(String[] args) {
+    static void main(String[] args) {;
         ContaPoupanca cnp = new ContaPoupanca("otavio", "123-X", "Bradesco", 33220.0, 2.0);
         ContaCorrente cnc = new ContaCorrente("Iago", "321-x", "Bradesco", 1220.0, 10);
 

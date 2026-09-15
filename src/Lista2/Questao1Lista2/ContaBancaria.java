@@ -24,7 +24,7 @@ public class ContaBancaria {
             System.out.println("Valor invalido");
             return;
         }
-        this.saldo += valor;
+        saldo += valor;
     }
 
 
