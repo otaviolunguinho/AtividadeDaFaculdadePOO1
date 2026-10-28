@@ -1,5 +1,5 @@
+package Lista6.questao12;
 import Lista6.questao12.Autonomo;
-import Lista6.questao12.Servicos;
 import Lista6.questao12.Servicos;
 import Lista6.questao12.TipoServico;
 
